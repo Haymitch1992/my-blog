@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "vuepress": "^1.0.2"
+  },
+  "name": "VuePressProject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs --temp .temp",
+    "view-info": "vuepress view-info docs --temp .temp",
+    "show-help": "vuepress --help",
+    "deploy": "bash deploy.sh"
+  },
+  "dependencies": {
+    "vuepress-theme-vue": "^1.1.0"
+  },
+  "homepage": "https://github.com/vuejs/vuepress#readme"
+}
