@@ -1,6 +1,6 @@
 module.exports = {
-    title: '123', // 页签标题 : A001_VuePress博客搭建的简单教程&问题分析 # | Wiki 1001
-    description: '王志伟的技术博客', // meta 中的描述文字，意义不大，SEO用
+    title: '王志伟的博客', // 页签标题 : A001_VuePress博客搭建的简单教程&问题分析 # | Wiki 1001
+    description: '学习、生活、工作、总结', // meta 中的描述文字，意义不大，SEO用
     // 注入到当前页面的 HTML <head> 中的标签
     head: [
         // 增加一个自定义的 favicon(网页标签的图标)
@@ -8,7 +8,7 @@ module.exports = {
         // 即 docs/.vuepress/public/img/geass-bg.ico
         ['link', { rel: 'icon', href: '/img/geass-bg.ico' }],
     ],
-    base: '/my-blog/', // 这是部署到github相关的配置
+    base: '/Haymitch1992.github.io/', // 这是部署到github相关的配置
     markdown: {
         lineNumbers: true // 代码块显示行号
     },
@@ -21,9 +21,10 @@ module.exports = {
             // 这里的'/' 指的是 docs文件夹路径
             // [以 '/' 结尾的默认指向该路径下README.md文件]
             { text: '求索', link: '/FAQ/' },  // http://localhost:8080/Wiki1001Pro/FAQ/
+            { text: '技术总结', link: '/Materials/'},
             { text: '仓库', link: '/Store/' },
             { text: '随笔', link: '/Thought/' },
-            { text: '前端面试题', link: '/Examination/' },
+            { text: '面试', link: '/Examination/' },
             // 多项，下拉形式
             {
                 text: 'Concat',
@@ -113,6 +114,15 @@ module.exports = {
             // 打开Store主页链接时生成下面这个菜单
             '/Examination/': [
                 ['','仓库首页']
+            ],
+            '/Materials/': [
+                ['','学习资料'],
+                {
+                    title: 'Vuepress',
+                    children: [
+                        ['/Materials/Vuepress/Vuepress', 'Vuepress搭建'],
+                    ]
+                },
             ]
         },
     }
