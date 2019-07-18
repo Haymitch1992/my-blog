@@ -122,6 +122,11 @@ module.exports = {
                     children: [
                         ['/Materials/Vuepress/Vuepress', 'Vuepress搭建'],
                     ]
+                }, {
+                    title: 'Vue+TypeScript',
+                    children: [
+                        ['/Materials/TypeScript/vueAndTypescript', 'Vue+TypeScript'],
+                    ]
                 },
             ]
         },
