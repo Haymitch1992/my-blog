@@ -246,3 +246,21 @@ cd -
 通过 `https://haymitch1992.github.io/` 访问 个人博客创建完成！
 
 ### 6. 发布到自己的个人域名下
+
+#### 申请域名
+
+通过阿里云 购买域名
+例如 ：wangzhiwei.online
+
+#### 在github仓库中绑定域名
+
+在setting 中进行绑定 
+![GitHub Pages绑定域名](/img/vuepress-3.jpg)
+
+#### 添加域名解析
+
+![获取 haymitch1992.github.io 的IP](/img/vuepress-4.jpg)
+
+添加域名解析 将拿到的ip地址填进去后
+ 
+访问 wangzhiwei.online 即个跳转到 个人博客首页 是不是很Cool！

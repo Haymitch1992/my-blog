@@ -30,7 +30,7 @@ module.exports = {
                 text: 'Concat',
                 items: [
                     // link：指向链接也可以是外网链接
-                    { text: 'Segmentfault', link: 'https://segmentfault.com/u/mulander' },
+                    { text: 'typescript+vue', link: '/Materials/Typescript/vueAndTypescript' },
                 ]
             },
             {
