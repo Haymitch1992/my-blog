@@ -1,6 +1,7 @@
 .DS_Store
 node_modules/
-docs/.vuepress/dist
+.temp/
+docs/.vuepress/dist/
 
 # Editor directories and files
 .idea
