@@ -1,13 +1,16 @@
 ## Vue项目中应用Typescript
 
 Vue CLI内置了TypeScript的支持，并且@vue/cli3提供了TypeScript插件，因此搭建支持TypeScript的vue工程非常方便
+
+---
+
 ### 1 创建工程
 
 ```bash
 npm install -g @vue/cli
 ```
 
-node环境要求在8及以上 window系统不支持通过命令行 需要现在安装升级
+node环境要求在8及以上 window系统不支持通过命令行 需要下载安装包进行升级
 
 ```bash
 vue create project-name
@@ -50,7 +53,7 @@ vue-cli-plugin-typescript插件除了添加了typescript相关依赖之外，我
 
 #### 声明响应式属性 data
 
-```javascript
+```typescript
 export default class App extends Vue {
   private name: string = 'kaelyn';   // 声明响应式属性
 }
@@ -58,7 +61,7 @@ export default class App extends Vue {
 
 这样的写法等同于之前的
 
-```javascript
+```typescript
 export default {
   name: 'App',
   data() {
@@ -71,16 +74,7 @@ export default {
 
 计算属性
 
-```html
-<template>
-  <div id="app">
-     <button @click="age = number + 1">+</button>
-     <p>{{age}}</p>
-     <button @click="age = number - 1">-</button>
-  </div>
-</template>
-
-<script>
+```typescript
 	import { Component, Vue } from 'vue-property-decorator';
 	@Component({})
 	export default class App extends Vue {
@@ -93,7 +87,7 @@ export default {
 	    this.number = Number(value);
   	  }
 	}
-</script>
+
 ```
 
 这样的写法等于之前的：
@@ -111,4 +105,3 @@ computed: {
 }
 ```
 
-### 4 添加vue-router

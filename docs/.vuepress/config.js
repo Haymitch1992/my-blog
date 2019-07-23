@@ -30,7 +30,7 @@ module.exports = {
                 text: 'Concat',
                 items: [
                     // link：指向链接也可以是外网链接
-                    { text: 'typescript+vue', link: '/Materials/Typescript/vueAndTypescript' },
+                    { text: 'typescript+vue', link: '/Materials/Typescript/VueAndTypescript' },
                 ]
             },
             {
@@ -125,9 +125,13 @@ module.exports = {
                 }, {
                     title: 'Vue+TypeScript',
                     children: [
-                        ['/Materials/TypeScript/vueAndTypescript', 'Vue+TypeScript'],
+                        ['/Materials/TypeScript/VueAndTypescript', 'Vue+TypeScript初始化项目'],
+                        ['/Materials/TypeScript/OriginalDataType', '原始数据类型'],
+                        ['/Materials/TypeScript/Any', '任意值'],
+                        ['/Materials/TypeScript/TypeInference', '类型推论'],
+                        ['/Materials/TypeScript/UnionType', '联合类型'],
                     ]
-                },
+                }
             ]
         },
     }
