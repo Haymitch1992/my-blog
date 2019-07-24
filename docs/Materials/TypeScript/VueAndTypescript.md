@@ -31,7 +31,7 @@ vue-cli-plugin-typescript插件除了添加了typescript相关依赖之外，我
 
 ### 3 使用Ts开发Vue
 
-```html
+```vue
 <template>
   <div class="content-wrapper" >
 
