@@ -131,6 +131,11 @@ module.exports = {
                         ['/Materials/TypeScript/TypeInference', '类型推论'],
                         ['/Materials/TypeScript/UnionType', '联合类型'],
                     ]
+                }, {
+                    title: 'Github使用技巧',
+                    children: [
+                        ['/Materials/Github/Collaborators', '为项目添加协作者'],
+                    ]
                 }
             ]
         },

@@ -31,23 +31,12 @@ vue-cli-plugin-typescript插件除了添加了typescript相关依赖之外，我
 
 ### 3 使用Ts开发Vue
 
-```html
-<template>
-  <div class="content-wrapper" >
-
-  </div>
-</template>
-
-<script lang = "ts" >
+```typescript
 	import { Component, Vue } from "vue-property-decorator";
 	@Component({})
 	export default class Foo extends Vue {
 
 	}
-</script>
-
-<style scoped >
-</style>
 
 ```
 
@@ -74,6 +63,16 @@ export default {
 
 计算属性
 
+```html
+<template>
+  <div id="app">
+     <button @click="age = number + 1">+</button>
+     <p>{{age}}</p>
+     <button @click="age = number - 1">-</button>
+  </div>
+</template>
+```
+
 ```typescript
 	import { Component, Vue } from 'vue-property-decorator';
 	@Component({})
@@ -92,16 +91,28 @@ export default {
 
 这样的写法等于之前的：
 
-```javascript
+```
 computed: {
   age: {
     get: function () {
-      return `I am ${this.number} years old`;
+      return `I am ${this.number} years old`
     },
     set: function (value) {
-      this.number = Number(value);
+      this.number = Number(value)
     }
   }
 }
 ```
 
+分享个小技巧，如果想要传参给 computed，可以令计算属性返回一个函数：
+
+```
+get foo() {
+  // ...
+  return (params: any) => {
+  	let returnValue;
+    // ...
+    return returnValue; 
+  }
+}
+```
