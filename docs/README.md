@@ -1,9 +1,9 @@
 ---
 home: true
 heroImage: /img/logo.jpg
-heroText: Wiki 1001
-tagline: Meet 1000 Books & Unit Them Into 1 Wiki
-actionText: Get Wiki →
+heroText: 技术博客
+tagline: 前端开发技术积累
+actionText: 查看
 actionLink: /FAQ/
 features:
 - title: Wiki - 求索
