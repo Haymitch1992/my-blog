@@ -109,9 +109,10 @@ module.exports = {
                         // ['','']=>[路径,标题]
                         // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
                         // 不以 '/' 结尾的就是指向.md文件
-                        ['/FAQ/DigestionHeap/Digested','中科软面试总结'], // '/FAQ/DigestionHeap/Digested.md'文件
-                        ['/FAQ/DigestionHeap/Digesting','现在支付面试总结'],
-                        ['/FAQ/DigestionHeap/DigestWill','有家美宿面试总结']
+                        ['/Examination/examinationPaper/exam-zhongkeruan','中科软面试总结'], // '/FAQ/DigestionHeap/Digested.md'文件
+                        ['/Examination/examinationPaper/exam-xianzaizhifu','现在支付面试总结'],
+                        ['/Examination/examinationPaper/exam-youjiameisu','有家美宿面试总结'],
+                        ['/Examination/examinationPaper/exam-1','笔试题'],
                     ]
                 },
             ],
