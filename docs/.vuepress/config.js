@@ -48,19 +48,6 @@ module.exports = {
             '/FAQ/':[
                 //多级菜单形式
                 {
-                    // 菜单名
-                    title: '消化堆',
-                    // 子菜单
-                    children: [
-                        // ['','']=>[路径,标题]
-                        // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
-                        // 不以 '/' 结尾的就是指向.md文件
-                        ['/FAQ/DigestionHeap/Digested','消化过'], // '/FAQ/DigestionHeap/Digested.md'文件
-                        ['/FAQ/DigestionHeap/Digesting','消化中'],
-                        ['/FAQ/DigestionHeap/DigestWill','待消化']
-                    ]
-                },
-                {
                     title: '输出层',
                     children: [
                         ['/FAQ/Console/A001','#A001_VuePress'],
@@ -113,7 +100,20 @@ module.exports = {
             ],
             // 打开Store主页链接时生成下面这个菜单
             '/Examination/': [
-                ['','仓库首页']
+                ['','面试总结'],
+                {
+                    // 菜单名
+                    title: '面试总结',
+                    // 子菜单
+                    children: [
+                        // ['','']=>[路径,标题]
+                        // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
+                        // 不以 '/' 结尾的就是指向.md文件
+                        ['/FAQ/DigestionHeap/Digested','中科软面试总结'], // '/FAQ/DigestionHeap/Digested.md'文件
+                        ['/FAQ/DigestionHeap/Digesting','现在支付面试总结'],
+                        ['/FAQ/DigestionHeap/DigestWill','有家美宿面试总结']
+                    ]
+                },
             ],
             '/Materials/': [
                 ['','学习资料'],
