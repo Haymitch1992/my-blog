@@ -112,6 +112,7 @@ module.exports = {
                         ['/Examination/examinationPaper/exam-zhongkeruan','中科软面试总结'], // '/FAQ/DigestionHeap/Digested.md'文件
                         ['/Examination/examinationPaper/exam-xianzaizhifu','现在支付面试总结'],
                         ['/Examination/examinationPaper/exam-youjiameisu','有家美宿面试总结'],
+                        ['/Examination/examinationPaper/exam-guanjiabang','管家帮面试总结'],
                         ['/Examination/examinationPaper/exam-1','笔试题'],
                     ]
                 },
