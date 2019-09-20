@@ -92,9 +92,12 @@ module.exports = {
                     ]
                 },
                 {
-                    title: '动画',
+                    title: '亮狮网',
                     children: [
-                        ['/Store/Anime/','收藏级动画']
+                        ['/Store/Anime/liangshiPage1','亮狮网企业文化'],
+                        ['/Store/Anime/liangshiPage2','亮狮网入职培训'],
+                        ['/Store/Anime/liangshiwork','亮狮网工作记录'],
+                        ['/Store/Anime/liangshiworklist','亮狮网工作备忘']
                     ]
                 },
             ],
@@ -127,6 +130,7 @@ module.exports = {
                 }, {
                     title: 'Vue+TypeScript',
                     children: [
+                        ['/Materials/TypeScript/learnVue', '学习Vue'],
                         ['/Materials/TypeScript/VueAndTypescript', 'Vue+TypeScript初始化项目'],
                         ['/Materials/TypeScript/OriginalDataType', '原始数据类型'],
                         ['/Materials/TypeScript/Any', '任意值'],
