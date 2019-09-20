@@ -20,7 +20,6 @@ module.exports = {
             // 单项 text：显示文字，link：指向链接
             // 这里的'/' 指的是 docs文件夹路径
             // [以 '/' 结尾的默认指向该路径下README.md文件]
-            { text: '求索', link: '/FAQ/' },  // http://localhost:8080/Wiki1001Pro/FAQ/
             { text: '技术总结', link: '/Materials/'},
             { text: '仓库', link: '/Store/' },
             { text: '随笔', link: '/Thought/' },
@@ -44,31 +43,24 @@ module.exports = {
         ],
         // 侧边栏菜单( 一个模块对应一个菜单形式 )
         sidebar:{
-            // 打开FAQ主页链接时生成下面这个菜单
-            '/FAQ/':[
-                //多级菜单形式
-                {
-                    title: '输出层',
-                    children: [
-                        ['/FAQ/Console/A001','#A001_VuePress'],
-                        ['/FAQ/Console/A002','#A002_插件清单']
-                    ]
-                },
-                ['/FAQ/','百科首页'],
-                ['/FAQ/Pool/SkillStack','技术栈'],
-                ['/FAQ/Pool/Review','归去来']
-            ],
             // 打开Thought主页链接时生成下面这个菜单
             '/Thought/':[
                 ['/Thought/','随笔首页'],
                 {
-                    title: '游记',
+                    title: '生活备忘',
                     children: [
-                        ['/Thought/Travels/beiPing','北平游记'],
+                        ['/Thought/Travels/beiPing','车险费用'],
                     ]
                 },
                 {
                     title: '年终回顾',
+                    children: [
+                        ['/Thought/YearReview/2018','2018年'],
+                        ['/Thought/YearReview/2019','2019年']
+                    ]
+                },
+                {
+                    title: '未来计划',
                     children: [
                         ['/Thought/YearReview/2018','2018年'],
                         ['/Thought/YearReview/2019','2019年']

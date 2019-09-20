@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /img/logo.jpg
-heroText: 技术博客
-tagline: 前端开发技术积累
+heroText: 王志伟
+tagline: 寄蜉蝣于天地，渺沧海之一粟
 actionText: 查看
 actionLink: /FAQ/
 features:
