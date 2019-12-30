@@ -89,6 +89,7 @@ module.exports = {
                         ['/Store/Anime/liangshiPage1','亮狮网企业文化'],
                         ['/Store/Anime/liangshiPage2','亮狮网入职培训'],
                         ['/Store/Anime/liangshiwork','亮狮网工作记录'],
+                        ['/Store/Anime/exchange','vue培训'],
                         ['/Store/Anime/liangshiworklist','亮狮网工作备忘']
                     ]
                 },

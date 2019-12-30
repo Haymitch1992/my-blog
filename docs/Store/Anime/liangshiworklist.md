@@ -36,3 +36,41 @@ Vue.prototype.$api_img_url = 'http://116.62.68.26/'; //图片的地址
 // // Vue.prototype.$api_img_url = 'http://omc.liangshipower.com:81/';//图片的地址
 // Vue.prototype.$api_img_url = 'https://img.liangshipower.com/';//图片的地址
 ```
+### 使用linear-gradient控制背景渐变
+
+```html
+<div class="bruce">
+	<div class="gradient-bg">iCSS</div>
+</div>
+```
+
+```
+
+.gradient-bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-weight: bold;
+	font-size: 100px;
+	color: #fff;
+    background: linear-gradient(135deg,#2997d0,#e26014,#1f54bf) left center/400% 400%;
+	animation: move 10s infinite;
+}
+@keyframes move {
+	0%,
+	100% {
+		background-position-x: left;
+	}
+	50% {
+		background-position-x: right;
+	}
+}
+
+```
+
+### erp 项目改造流程
+- 子组件与父组件之间的通信 
+- 引入全局方法
+- php 创建接口名 需要在 `\WWW\laravel\resources\assets\js\api\api.js` 配置
+- php `\WWW\laravel\app\Http\Controllers\Contract` 在对应文件中 创建接口
