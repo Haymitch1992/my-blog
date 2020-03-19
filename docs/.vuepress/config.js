@@ -56,14 +56,16 @@ module.exports = {
                     title: '年终回顾',
                     children: [
                         ['/Thought/YearReview/2018','2018年'],
-                        ['/Thought/YearReview/2019','2019年']
+                        ['/Thought/YearReview/2019','2019年'],
+                        ['/Thought/YearReview/2020','2020年']
                     ]
                 },
                 {
                     title: '未来计划',
                     children: [
                         ['/Thought/YearReview/2018','2018年'],
-                        ['/Thought/YearReview/2019','2019年']
+                        ['/Thought/YearReview/2019','2019年'],
+                        ['/Thought/YearReview/2020','2020年']
                     ]
                 },
             ],
@@ -120,6 +122,12 @@ module.exports = {
                     children: [
                         ['/Materials/Vuepress/Vuepress', 'Vuepress搭建'],
                     ]
+                },{
+                    title:'Vue项目实战',
+                    children:[
+                        ['/Materials/Vue/vue','Vue项目搭建'],
+                        ['/Materials/Vue/vueFor','v-for中key的作用']
+                    ]
                 }, {
                     title: 'Vue+TypeScript',
                     children: [
@@ -134,6 +142,7 @@ module.exports = {
                     title: 'Github使用技巧',
                     children: [
                         ['/Materials/Github/Collaborators', '为项目添加协作者'],
+                        ['/Materials/Github/GitFetch','git fetch & pull详解']
                     ]
                 }
             ]
