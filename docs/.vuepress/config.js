@@ -126,7 +126,8 @@ module.exports = {
                     title:'Vue项目实战',
                     children:[
                         ['/Materials/Vue/vue','Vue项目搭建'],
-                        ['/Materials/Vue/vueFor','v-for中key的作用']
+                        ['/Materials/Vue/vueFor','v-for中key的作用'],
+                        ['/Materials/Vue/vueModel','vue-model的原理']
                     ]
                 }, {
                     title: 'Vue+TypeScript',
