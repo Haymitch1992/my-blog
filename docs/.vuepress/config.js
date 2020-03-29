@@ -122,6 +122,11 @@ module.exports = {
                     children: [
                         ['/Materials/Vuepress/Vuepress', 'Vuepress搭建'],
                     ]
+                }, {
+                    title: 'Javascript',
+                    children: [
+                        ['/Materials/Javascript/Array', '数组的常见操作'],
+                    ]
                 },{
                     title:'Vue项目实战',
                     children:[
