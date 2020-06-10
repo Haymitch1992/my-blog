@@ -53,7 +53,7 @@ findIndex()与find()的使用方法相同，只是当条件为true时findIndex()
     console.log(i2);// -1
 ```
 
-### filter
+### filter()
 filter()与find()使用方法也相同。同样都接收三个参数。不同的地方在于返回值。filter()返回的是数组，数组内是所有满足条件的元素，而find()只返回第一个满足条件的元素。如果条件不满足，filter()返回的是一个空数组，而find()返回的是undefined
 
 ```javascript
@@ -74,3 +74,17 @@ filter()与find()使用方法也相同。同样都接收三个参数。不同的
     console.log(myArr.filter((value,index,arr)=>arr.indexOf(value)===index));
     //[ 1, 3, 4, 5, 6, 7 ]
 ```
+
+### forEach()
+### indexOf()
+### lastIndexOf()
+### shift()
+### unshift()
+### push()
+### pop()
+### join()
+### contact()
+### reverse()
+### slice()
+### splice()
+### toString()
