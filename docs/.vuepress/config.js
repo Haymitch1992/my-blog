@@ -151,6 +151,11 @@ module.exports = {
                         ['/Materials/Github/Collaborators', '为项目添加协作者'],
                         ['/Materials/Github/GitFetch','git fetch & pull详解']
                     ]
+                },{
+                    title: 'NPM',
+                    children: [
+                        ['/Materials/Npm/Issue','发布Npm插件']
+                    ]
                 }
             ]
         },
