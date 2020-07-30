@@ -50,6 +50,7 @@ module.exports = {
                     title: '生活备忘',
                     children: [
                         ['/Thought/Travels/beiPing','车险费用'],
+                        ['/Thought/Travels/tip','小窍门'],
                     ]
                 },
                 {
