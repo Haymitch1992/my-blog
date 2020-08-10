@@ -51,6 +51,7 @@ module.exports = {
                     children: [
                         ['/Thought/Travels/beiPing','车险费用'],
                         ['/Thought/Travels/tip','小窍门'],
+                        ['/Thought/Travels/lixiang','理想One驾驶体验']
                     ]
                 },
                 {
