@@ -54,6 +54,12 @@ module.exports = {
                     ]
                 },
                 {
+                    title: '旅游出行',
+                    children: [
+                        ['/Thought/Travels/tianlu','草原天路'],
+                    ]
+                },
+                {
                     title: '年终回顾',
                     children: [
                         ['/Thought/YearReview/2018','2018年'],
