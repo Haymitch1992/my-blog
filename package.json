@@ -11,7 +11,7 @@
     "build": "vuepress build docs --temp .temp",
     "view-info": "vuepress view-info docs --temp .temp",
     "show-help": "vuepress --help",
-    "deploy": "bash deploy.sh"
+    "deploy": "deploy.sh"
   },
   "dependencies": {
     "vuepress-theme-vue": "^1.1.0"
