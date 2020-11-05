@@ -152,6 +152,7 @@ module.exports = {
                         ['/Materials/TypeScript/Any', '任意值'],
                         ['/Materials/TypeScript/TypeInference', '类型推论'],
                         ['/Materials/TypeScript/UnionType', '联合类型'],
+                        ['/Materials/TypeScript/generator', 'Generator函数'],
                     ]
                 }, {
                     title: 'Github使用技巧',
@@ -160,9 +161,10 @@ module.exports = {
                         ['/Materials/Github/GitFetch','git fetch & pull详解']
                     ]
                 },{
-                    title: 'NPM',
+                    title: '包管理工具',
                     children: [
-                        ['/Materials/Npm/Issue','发布Npm插件']
+                        ['/Materials/Npm/Issue','NPM'],
+                        ['/Materials/Npm/yarn','YARN']
                     ]
                 }
             ]
