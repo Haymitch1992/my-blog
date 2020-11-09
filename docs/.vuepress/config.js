@@ -102,7 +102,12 @@ module.exports = {
                         ['/Store/Anime/exchange','vue培训'],
                         ['/Store/Anime/liangshiworklist','亮狮网工作备忘']
                     ]
-                },
+                },{
+                    title: '交控科技',
+                    children: [
+                        ['/Store/tct/企业文化培训.md','企业文化培训'],
+                    ]
+                }
             ],
             // 打开Store主页链接时生成下面这个菜单
             '/Examination/': [
