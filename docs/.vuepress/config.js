@@ -171,6 +171,11 @@ module.exports = {
                         ['/Materials/Npm/Issue','NPM'],
                         ['/Materials/Npm/yarn','YARN']
                     ]
+                },{
+                    title: '开发工具',
+                    children: [
+                        ['/Materials/VsCode/VsCode常用插件.md','VsCode常用插件'],
+                    ]
                 }
             ]
         },
