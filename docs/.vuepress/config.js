@@ -146,7 +146,8 @@ module.exports = {
                         ['/Materials/Vue/vue','Vue项目搭建'],
                         ['/Materials/Vue/vueFor','v-for中key的作用'],
                         ['/Materials/Vue/vueModel','vue-model的原理'],
-                        ['/Materials/Vue/vueAwesomeSwiper','项目中使用vue-awesome-swiper']
+                        ['/Materials/Vue/vueAwesomeSwiper','项目中使用vue-awesome-swiper'],
+                        ['/Materials/Vue/vue3','vue3新特性']
                     ]
                 }, {
                     title: 'Vue+TypeScript',
