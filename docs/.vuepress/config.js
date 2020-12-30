@@ -134,6 +134,7 @@ module.exports = {
                     title: 'Vuepress',
                     children: [
                         ['/Materials/Vuepress/Vuepress', 'Vuepress搭建'],
+                        ['/Materials/UI/UI.md', '拿到UI设计后，前端应该如何思考?']
                     ]
                 }, {
                     title: 'Javascript',
