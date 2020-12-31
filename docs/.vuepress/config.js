@@ -98,15 +98,28 @@ module.exports = {
             ],
             // 打开Store主页链接时生成下面这个菜单
             '/Examination/': [
-                ['','面试总结'],
                 {
                     // 菜单名
-                    title: '面试总结',
+                    title: '面试技巧',
                     // 子菜单
                     children: [
                         // ['','']=>[路径,标题]
                         // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
                         // 不以 '/' 结尾的就是指向.md文件
+                        ['/Examination/interviewExperience/00-准备','准备'],
+                        ['/Examination/interviewExperience/01-页面布局','页面布局'],
+
+                    ]
+                },
+                {
+                    // 菜单名
+                    title: '面试反馈及结果',
+                    // 子菜单
+                    children: [
+                        // ['','']=>[路径,标题]
+                        // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
+                        // 不以 '/' 结尾的就是指向.md文件
+                        ['/Examination/examinationPaper/00-准备','准备'],
                         ['/Examination/examinationPaper/exam-zhongkeruan','中科软面试总结'], // '/FAQ/DigestionHeap/Digested.md'文件
                         ['/Examination/examinationPaper/exam-xianzaizhifu','现在支付面试总结'],
                         ['/Examination/examinationPaper/exam-youjiameisu','有家美宿面试总结'],
