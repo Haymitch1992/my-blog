@@ -50,6 +50,14 @@ module.exports = {
                     title: '生活备忘',
                     children: [
                         ['/Thought/Travels/beiPing','车险费用'],
+                        ['/Thought/Travels/tip','小窍门'],
+                        ['/Thought/Travels/lixiang','理想One驾驶体验']
+                    ]
+                },
+                {
+                    title: '旅游出行',
+                    children: [
+                        ['/Thought/Travels/tianlu','草原天路'],
                     ]
                 },
                 {
@@ -94,7 +102,12 @@ module.exports = {
                         ['/Store/Anime/exchange','vue培训'],
                         ['/Store/Anime/liangshiworklist','亮狮网工作备忘']
                     ]
-                },
+                },{
+                    title: '交控科技',
+                    children: [
+                        ['/Store/tct/企业文化培训.md','企业文化培训'],
+                    ]
+                }
             ],
             // 打开Store主页链接时生成下面这个菜单
             '/Examination/': [
@@ -134,6 +147,7 @@ module.exports = {
                     title: 'Vuepress',
                     children: [
                         ['/Materials/Vuepress/Vuepress', 'Vuepress搭建'],
+                        ['/Materials/UI/UI.md', '拿到UI设计后，前端应该如何思考?']
                     ]
                 }, {
                     title: 'Javascript',
@@ -146,7 +160,8 @@ module.exports = {
                         ['/Materials/Vue/vue','Vue项目搭建'],
                         ['/Materials/Vue/vueFor','v-for中key的作用'],
                         ['/Materials/Vue/vueModel','vue-model的原理'],
-                        ['/Materials/Vue/vueAwesomeSwiper','项目中使用vue-awesome-swiper']
+                        ['/Materials/Vue/vueAwesomeSwiper','项目中使用vue-awesome-swiper'],
+                        ['/Materials/Vue/vue3','vue3新特性']
                     ]
                 }, {
                     title: 'Vue+TypeScript',
@@ -157,12 +172,24 @@ module.exports = {
                         ['/Materials/TypeScript/Any', '任意值'],
                         ['/Materials/TypeScript/TypeInference', '类型推论'],
                         ['/Materials/TypeScript/UnionType', '联合类型'],
+                        ['/Materials/TypeScript/generator', 'Generator函数'],
                     ]
                 }, {
                     title: 'Github使用技巧',
                     children: [
                         ['/Materials/Github/Collaborators', '为项目添加协作者'],
                         ['/Materials/Github/GitFetch','git fetch & pull详解']
+                    ]
+                },{
+                    title: '包管理工具',
+                    children: [
+                        ['/Materials/Npm/Issue','NPM'],
+                        ['/Materials/Npm/yarn','YARN']
+                    ]
+                },{
+                    title: '开发工具',
+                    children: [
+                        ['/Materials/VsCode/VsCode常用插件.md','VsCode常用插件'],
                     ]
                 }
             ]
