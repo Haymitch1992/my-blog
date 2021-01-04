@@ -8,6 +8,219 @@
 
 通过几年的工作积累，对于如何实现有了一点认识分享给大家，先说结论：整体上对我要做的项目有个大概的定位，然后具体的细节部分高度还原设计尺寸。
 
+在上面 UI 中，有以下特点：
+
+![拿到一份UI设计](/img/ui-page-1.png)
+
+- Header/Navigation
+- 中间内容 部分
+- 底部的 How it works 部分
+
+接着，我们先把这三个主要部分抽象出来：
+
+![拿到一份UI设计](/img/ui-page-2.png)
+
+抽象后，我们可以看到主要的部分，主宋就可以帮助我们考虑如何布局组件，而不用考虑每个组件的细节。
+
+我是这样想的：
+
+- Full-width header：头部的导航栏
+- Centered Content：中间内容水平居中，注意，这个一般需要设置最大宽度 max-width。
+- How it works：这是一个 4 列的布局，整个部分都被限制在一个包装器中。
+
+接着，把上面三个部分用代码表示出来：
+
+![拿到一份UI设计](/img/ui-page-3.png)
+
+抽象后，我们可以看到主要的部分，主宋就可以帮助我们考虑如何布局组件，而不用考虑每个组件的细节。
+
+我是这样想的：
+
+- `Full-width header`：头部的导航栏
+- `Centered Content`：中间内容水平居中，注意，这个一般需要设置最大宽度 `max-width`。
+- `How it works`：这是一个 4 列的布局，整个部分都被限制在一个包装器中。
+
+接着，把上面三个部分用代码表示出来：
+
+```html
+<header></header>
+
+<section class="hero">
+  <!-- A div to constraint the content -->
+  <div class="hero__content"></div>
+</section>
+
+<div class="wrapper">
+  <!-- 4-columns layout -->
+  <section class="grid-4"></section>
+</div>
+```
+
+因为我们有一个 4 列的部分，这里我使用 CSS 网格：
+
+```css
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1140px;
+}
+
+.hero__content {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+```
+
+拿到 UI 时，我们不是马上就开始行动，而是要观察整体的构成，先实现每块的构成，然后再去深入构成的实现。
+
+### 文章页面
+
+在本例中，我们有一个文章页面布局。这是 UI，它包含:
+
+- 头部
+- 图片
+- 文章标题
+- 文章内容
+- 侧边栏（旁边）
+
+我们再一次把它抽象成主要的几个部分：
+
+![拿到一份UI设计](/img/ui-page-4.png)
+
+抽象主要包括几个部分：
+
+- 网站的头部宽度是 100%
+
+- 标题：包含文章标题和说明，其内容左对齐，要设置最大宽度
+
+- 两列布局，包含 `main` 和 `sidebar` 元素。
+
+- 文章内容，水平居中并有最大宽度。
+
+#### 文章-页面标题
+
+![拿到一份UI设计](/img/ui-page-5.png)
+
+这里不需要什么布局方法。一个简单的 max-width 就可以了，当然还需要加些 padding，增加一些舒适距离。
+
+```css
+.page-header {
+  max-width: 50rem;
+  padding: 2rem 1rem;
+}
+```
+
+![拿到一份UI设计](/img/ui-page-6.png)
+
+#### 文章- Main 和 Sidebar
+
+```css
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+  grid-template-columns: 1fr 250px;
+}
+```
+
+对于文章的内部内容，应该将其限制在一个包装器中。
+
+```css
+.inner-content {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+```
+
+有些整体的布局后，我们来看具体的细节。
+
+### 有些整体的布局后，我们来看具体的细节
+
+How It Works 部分
+
+在本文的第一个示例中，我们来看一下 How It Works 部分 的细节实现。
+
+![拿到一份UI设计](/img/ui-page-6.png)
+
+#### 标题
+
+我们是否需要该部分标题留在一边？ 还是在某些情况下应采用全宽？
+
+#### 响应式设计
+
+当网页宽度缩小时，我们需要做响应式吗？ 如果有, 那触发的条件是什么？
+
+这些是我们开发可能会遇到的问题，你觉得怎么样?作为一名前端开发人员，我们应该考虑这样的边缘情况，而不仅仅按 UI 照猫画虎这样简单。
+
+![拿到一份UI设计](/img/ui-page-7.png)
+
+由于本文着重于思考过程，所以无法详细介绍一个个有可能出现的情况。
+
+在上面的模型的第一个和第三个版本中，步骤数分别是 3 和 2。我们可以使 CSS 动态化来处理吗？ 可以。
+
+```html
+<div class="wrapper">
+  <section class="steps">
+    <div>
+      <h2>How it works</h2>
+      <p>Easy and simple steps</p>
+    </div>
+    <div class="layout">
+      <div class="layout__item">
+        <article class="card"></article>
+      </div>
+      <div class="layout__item">
+        <article class="card"></article>
+      </div>
+      <div class="layout__item">
+        <article class="card"></article>
+      </div>
+    </div>
+  </section>
+</div>
+```
+
+```css
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  .steps {
+    grid-template-columns: 250px 1fr;
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 200px) {
+  .layout {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+```
+
+我使用了 CSS grid minmax()和 auto-fit 关键字。 这在卡片数量可以增加或减少的情况下很有用。
+
 ## PC 端
 
 ### 常见屏幕尺寸
