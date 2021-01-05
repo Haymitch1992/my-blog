@@ -1,4 +1,4 @@
- Airbnb JavaScript 代码规范() {
+# Airbnb JavaScript 代码规范() {
 
 _一种写 JavaScript 更合理的代码风格。_
 
@@ -18,7 +18,7 @@ _一种写 JavaScript 更合理的代码风格。_
 - [CSS & Sass](https://github.com/airbnb/css)
 - [Ruby](https://github.com/airbnb/ruby)
 
-## 目录
+## <a id="table-of-contents">目录</a>
 
 1. [类型](#types)
 1. [引用](#references)
