@@ -142,12 +142,17 @@ module.exports = {
                 },
             ],
             '/Materials/': [
-                ['','学习资料'],
+                {
+                    title: '培训学习',
+                    children: [
+                        ['/Materials/UI/UI.md', '拿到UI设计后，前端应该如何思考?'],
+                        ['/Materials/UI/Airbnb前端代码规范.md', '前端代码规范']
+                    ]
+                },
                 {
                     title: 'Vuepress',
                     children: [
                         ['/Materials/Vuepress/Vuepress', 'Vuepress搭建'],
-                        ['/Materials/UI/UI.md', '拿到UI设计后，前端应该如何思考?']
                     ]
                 }, {
                     title: 'Javascript',
