@@ -1,9 +1,8 @@
-# 拿到 UI 时，前端应该如何思考？
+# 拿到 UI 设计稿，前端应该如何思考？
 
 前端开发者的主要职责就是将 UI 设计稿转化为实际可用的页面，效果图的还原度在相当大的程度上决定了 UI 和 PM 的满意度。
 
-一般情况下，拿到设计稿后，懒散点的可能直接看图软件打开，肉眼测距就开搞了，负责点的会打开 PS 或者更正规的 Photoshop，
-力图精确到 px。
+一般情况下，拿到设计稿后，懒散点的可能直接打开，肉眼测距就开搞了，负责点的会打开 PS，力图精确到 px。
 
 这两种方法各有利弊，前者的还原度大概率堪忧，后者耗时耗力，最后都不一定能过得了设计师的像素眼。
 
@@ -132,8 +131,8 @@ margin 跟 padding 一样
 
 rem 单位无论嵌套层级如何，都只相对于浏览器的根元素（HTML 元素）的 font-size。默认情况下，html 元素的 font-size 为 16px，所以：
 
-```css
-// 1 rem = 16px
+```
+ 1 rem = 16px
 ```
 
 有个问题就是开发的时候，单位用 rem，而设计师一般都是用 px 来设计，开发者用 rem 来开发，极为不适应，虽然可以 font-size 进行转换。
@@ -142,40 +141,10 @@ rem 单位无论嵌套层级如何，都只相对于浏览器的根元素（HTML
 
 可以通过改变 html font-size 来进行动态自适应
 
-1 rem2px, px2rem
-
-```bash
-npm install px2rem-loader
-```
-
-```js
-module.exports = {
-  // ...
-  module: {
-    rules: [{
-      test: /\.css$/,
-      use: [{
-        loader: 'style-loader'
-      }, {
-        loader: 'css-loader'
-      }, {
-        loader: 'px2rem-loader',
-        // options here
-        options: {
-          remUni: 75,
-          remPrecision: 8
-        }
-      }]
-    }]
-  }
-
-```
-
-2.1 用 webpack 的插件
+用 webpack 的插件
 
 ```bash
 npm install postcss-loader
-
 ```
 
 在 webpack 的 plugin 中:
@@ -200,11 +169,11 @@ module.exports = {
 
 ## 实例分析
 
+![拿到一份UI设计](/img/ui-page-1.png)
+
 ## 把设计细节放在一边
 
 根据 UI 设计图将页面抽象成三个部分：
-
-![拿到一份UI设计](/img/ui-page-1.png)
 
 - Header/Navigation
 - 中间内容 部分
