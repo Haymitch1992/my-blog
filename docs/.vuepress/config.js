@@ -29,15 +29,14 @@ module.exports = {
                 text: 'Concat',
                 items: [
                     // link：指向链接也可以是外网链接
-                    { text: 'typescript+vue', link: '/Materials/Typescript/VueAndTypescript' },
+                    { text: '数据中台', link: 'http://112.126.65.241:4000/login' },
+                    { text: '算法中台', link: 'http://47.95.214.123:8000/#/' },
                 ]
             },
             {
                 text: 'GitHub',
                 items: [
-                    { text: 'GitHub首页', link: 'https://github.com/Mulander-J' },
-                    { text: 'Island', link: 'https://mulander-j.github.io/island/code/html/index.html' },
-                    { text: 'TimeWaster', link: 'https://mulander-j.github.io/timeWaster/demo/index.html#/' },
+                    { text: 'GitHub首页', link: 'https://github.com/Haymitch1992' },
                 ]
             },
         ],
@@ -65,15 +64,8 @@ module.exports = {
                     children: [
                         ['/Thought/YearReview/2018','2018年'],
                         ['/Thought/YearReview/2019','2019年'],
-                        ['/Thought/YearReview/2020','2020年']
-                    ]
-                },
-                {
-                    title: '未来计划',
-                    children: [
-                        ['/Thought/YearReview/2018','2018年'],
-                        ['/Thought/YearReview/2019','2019年'],
-                        ['/Thought/YearReview/2020','2020年']
+                        ['/Thought/YearReview/2020','2020年'],
+                        ['/Thought/YearReview/2021','2021年']
                     ]
                 },
             ],
@@ -132,7 +124,6 @@ module.exports = {
                         // ['','']=>[路径,标题]
                         // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
                         // 不以 '/' 结尾的就是指向.md文件
-                        ['/Examination/examinationPaper/00-准备','准备'],
                         ['/Examination/examinationPaper/exam-zhongkeruan','中科软面试总结'], // '/FAQ/DigestionHeap/Digested.md'文件
                         ['/Examination/examinationPaper/exam-xianzaizhifu','现在支付面试总结'],
                         ['/Examination/examinationPaper/exam-youjiameisu','有家美宿面试总结'],
