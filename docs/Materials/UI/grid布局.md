@@ -55,6 +55,51 @@
 
 - grid-template-columns 定义网格的列
 - grid-template-rows 定义网格的行
+- grid-template-areas 定义网格区域
+- grid-template 是 grid-template-columns grid-template-rows grid-template-aresas 的简写(暂时不建议写)
+- gap 网格线的宽度 grid-column-gap grid-row-gap 等长度控制列与列之间（行与行之间）的间隙
+- items justify-items 沿着行轴兑现网格内的内容 `start` `end` `center` `stretch` 内容宽度占据整个网格区域空间（这是默认值）
+- alin-items 沿着竖轴兑现网格内的内容 `start` `end` `center` `stretch` 内容宽度占据整个网格区域空间（这是默认值）
+- place-item 是justify-items alin-items 简写
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: [aa-start] 100px [aa-end bb-start] atuo 1fr 1fr;
+  grid-template-areas:
+    'aa bb bb cc'
+    'dd bb bb ee'
+    'ff gg gg gg';
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 55px;
+  
+  /* grid-gap: <grid-row-gap> <grid-column-gap>; */
+  /* gap: 55px 50px; 符合w3c的最新简写*/
+
+  /* justify-items: end;
+  align-items:center; */
+  place-items: center end;
+}
+.aa {
+  grid-area: aa;
+}
+.bb {
+  grid-area: bb;
+}
+.cc {
+  grid-area: cc;
+}
+.dd {
+  grid-area: dd;
+}
+.ee {
+  grid-area: ee;
+}
+.gg {
+  grid-area: gg;
+}
+```
 
 ### 属性值
 

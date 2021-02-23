@@ -137,7 +137,8 @@ module.exports = {
                     title: '培训学习',
                     children: [
                         ['/Materials/UI/UI.md', '拿到UI设计后，前端应该如何思考?'],
-                        ['/Materials/UI/Airbnb前端代码规范.md', '前端代码规范']
+                        ['/Materials/UI/Airbnb前端代码规范.md', '前端代码规范'],
+                        ['/Materials/UI/grid布局.md', 'grid布局']
                     ]
                 },
                 {
