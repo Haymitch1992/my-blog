@@ -2,7 +2,7 @@
   "devDependencies": {
     "vuepress": "^1.0.2"
   },
-  "name": "VuePressProject",
+  "name": "vuepress",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
