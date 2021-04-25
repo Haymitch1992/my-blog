@@ -44,3 +44,34 @@ npm start   //预览项目，如果能正常打开，说明项目创建成功
 - 红色： 说明页面是用 React 编写的，并且处于调试环境当中。
 
 可以直接看到组件之间传递的参数和值
+
+## React 声明周期
+
+### Mounting 阶段
+
+三个小的声明周期函数 分别是
+
+- `componentWillMount` 组件激将呗关在到页面的时候执行
+- `render` 页面 state 或 props 发生变化时执行
+- `componentDidMount` 组件挂在完成
+
+```jsx
+componentWillMount(){
+    console.log('componentWillMount----组件将要挂载到页面的时刻')
+}
+componentDidMount(){
+    console.log('componentDidMount----组件挂载完成的时刻执行')
+}
+render(){
+    console.log('render---组件挂载中.......')
+}
+```
+
+### 注意的问题 
+
+`componentWillMount` 和 `componentDidMount`这个两个生命周期函数，只在页面刷新时候执行一次，而`render`函数是只要state 和 props变化就会执行
+
+### shouldComponentUpdate 函数
+
+必须有返回值返回 true 和false 
+
