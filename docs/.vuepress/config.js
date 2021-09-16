@@ -99,6 +99,7 @@ module.exports = {
                     children: [
                         ['/Store/tct/企业文化培训.md', '企业文化培训'],
                         ['/Store/tct/交控科技前端面试题.md','交控科技前端面试题'],
+                        ['/Store/tct/深圳智慧车站项目.md','深圳智慧车站项目'],
                     ]
                 }
             ],
