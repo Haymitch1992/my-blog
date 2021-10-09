@@ -99,7 +99,7 @@ module.exports = {
                     children: [
                         ['/Store/tct/企业文化培训.md', '企业文化培训'],
                         ['/Store/tct/交控科技前端面试题.md','交控科技前端面试题'],
-                        ['/Store/tct/深圳智慧车站项目.md','深圳智慧车站项目'],
+                        ['/Store/tct/深圳智慧车站项目.md', '深圳智慧车站项目'],
                     ]
                 }
             ],
@@ -140,7 +140,23 @@ module.exports = {
                     children: [
                         ['/Materials/UI/UI.md', '拿到UI设计后，前端应该如何思考?'],
                         ['/Materials/UI/Airbnb前端代码规范.md', '前端代码规范'],
-                        ['/Materials/UI/grid布局.md', 'grid布局']
+                        ['/Materials/UI/grid布局.md', 'grid布局'],
+                    ]
+                },
+                {
+                    title: '前端进阶',
+                    children: [
+                        ['/Materials/Advance/常用设计模式.md', '常用设计模式'],
+                        ['/Materials/Advance/代码的封装性.md', '代码的封装性'],
+                        ['/Materials/Advance/高级特性.md', '高级特性'],
+                        ['/Materials/Advance/过程抽象.md', '过程抽象'],
+                        ['/Materials/Advance/前端工程化.md', '前端工程化'],
+                        ['/Materials/Advance/让CSS做更多的事情.md', '让CSS做更多的事情'],
+                        ['/Materials/Advance/谈谈组件的封装.md', '谈谈组件的封装'],
+                        ['/Materials/Advance/玩转动画.md', '玩转动画'],
+                        ['/Materials/Advance/用好异步.md', '用好异步'],
+                        ['/Materials/Advance/遵守各司其职的原则.md', '遵守各司其职的原则'],
+
                     ]
                 },
                 {
