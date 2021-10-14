@@ -144,6 +144,12 @@ module.exports = {
                     ]
                 },
                 {
+                    title: '全栈开发',
+                    children: [
+                        ['/Materials/EGG/egg.md', 'Egg.js'],
+                    ]
+                },
+                {
                     title: '前端进阶',
                     children: [
                         ['/Materials/Advance/常用设计模式.md', '常用设计模式'],
@@ -156,7 +162,7 @@ module.exports = {
                         ['/Materials/Advance/玩转动画.md', '玩转动画'],
                         ['/Materials/Advance/用好异步.md', '用好异步'],
                         ['/Materials/Advance/遵守各司其职的原则.md', '遵守各司其职的原则'],
-
+                        
                     ]
                 },
                 {
