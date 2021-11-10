@@ -184,6 +184,7 @@ module.exports = {
                 },{
                     title:'Vue项目实战',
                     children:[
+                        ['/Materials/Vue/2021年最新完整vite+vue3+vuex4.0项目实战.md','Vite+Vue3+Tyescript搭建项目'],
                         ['/Materials/Vue/vue','Vue项目搭建'],
                         ['/Materials/Vue/vueFor','v-for中key的作用'],
                         ['/Materials/Vue/vueModel','vue-model的原理'],

@@ -149,3 +149,54 @@ module.exports = JspangController;
 ```js
 router.get('/my', controller.jspang.index);
 ```
+
+## 单元测试
+
+每写一个 controller 都需要进行单元测试
+
+## egg 连接 mysql 数据库
+
+安装 egg-mysql 插件
+
+```bash
+yarn add egg-mysql
+```
+
+在`config/plugin.js`中配置
+
+```js
+exports.mysql = {
+  enable: true,
+  package: 'egg-mysql',
+};
+```
+
+在`config/configdefault.js`中配置
+
+```js
+config.mysql = {
+  // database configuration
+  client: {
+    // host
+    host: 'localhost',
+    // port
+    port: '3306',
+    // username
+    user: 'root',
+    // password
+    password: 'root',
+    // database
+    database: 'egg_article',
+  },
+  // load into app, default is open
+  app: true,
+  // load into agent, default is close
+  agent: false,
+};
+```
+
+## egg+vue 制作一个文章应用
+
+- 列表页
+- 详情页
+- 添加页
