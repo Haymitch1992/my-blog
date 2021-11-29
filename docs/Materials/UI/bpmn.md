@@ -1,5 +1,19 @@
 # BPMN
 
+## 参考资料
+
+[BPMN 业务流程建模符号](https://www.zhihu.com/search?type=content&q=bpmn)
+
+[BPMN 官网](https://www.bpmn.org/)
+
+[Bpmn.js 中文文档一](https://juejin.cn/post/6900793894263488519)
+
+[Bpmn.js 中文文档二](https://juejin.cn/post/6925304166638174216)
+
+[在线 BPMN 编辑器](https://miyuesc.gitee.io/process-designer/)
+
+[新到楼二层一键开关站](http://172.51.215.159:30084/#/changeStatus)
+
 ## BPMN 概况
 
 BPMN（Business Process Modeling Notation，即业务流程建模符号），是一种流程建模的通用和标准语言，用来绘制业务流程图，以便更好地让各部门之间理解业务流程和相互关系。
@@ -9,7 +23,7 @@ BPMN（Business Process Modeling Notation，即业务流程建模符号），是
 - BPMN 1.0 规范由标准组织 BPMI（后并入到 OMG）于 2004 年 5 月发布；
 - BPMN 2.0 标准由 OMG 于 2011 年推出。
 
-Bpmn 的目标是:
+Bpmn 的目标人群是:
 
 - 负责流程实施的技术专家;
 - 创建和改进流程的业务分析师;
@@ -66,14 +80,54 @@ Bpmn 使用简单的图形符号将业务流程可视化为图表。这些图形
 
 ![人工信息](https://i.bmp.ovh/imgs/2021/11/7c402b43c02bf5d6.png)
 
-## 参考资料
+### 示例
 
-[BPMN 业务流程建模符号](https://www.zhihu.com/search?type=content&q=bpmn)
-
-[BPMN 官网](https://www.bpmn.org/)
-
-[Bpmn.js 中文文档一](https://juejin.cn/post/6900793894263488519)
-
-[Bpmn.js 中文文档二](https://juejin.cn/post/6925304166638174216)
-
-[在线 BPMN 编辑器](https://miyuesc.gitee.io/process-designer/)
+```html
+<!-- 步骤 -->
+<bpmn2:process
+  id="Process_1637630428551"
+  name="业务流程_1637630428551"
+  isExecutable="true"
+>
+  <bpmn2:userTask
+    id="Activity_1fok3wu"
+    name="设备自检"
+    camunda:asyncBefore="true"
+    camunda:formKey="biaoshi"
+    camunda:assignee="user1"
+    camunda:candidateUsers="user1"
+    camunda:candidateGroups="group1"
+    camunda:dueDate="111"
+    camunda:followUpDate="222"
+    camunda:priority="1"
+  >
+    <bpmn2:documentation>设备自检包含 电梯门帘 </bpmn2:documentation>
+    <bpmn2:extensionElements>
+      <camunda:executionListener class="java" event="start" />
+      <camunda:taskListener class="bbb" event="create" id="aaa" />
+      <camunda:formData businessKey="">
+        <camunda:formField
+          id="444"
+          label="444"
+          type="long"
+          defaultValue="444"
+        />
+        <camunda:formField
+          id="id1"
+          label="key"
+          type="long"
+          defaultValue="wang"
+        />
+      </camunda:formData>
+    </bpmn2:extensionElements>
+  </bpmn2:userTask>
+</bpmn2:process>
+<!-- 图解 -->
+<bpmndi:BPMNDiagram id="BPMNDiagram_1">
+  <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1637630428551">
+    <bpmndi:BPMNShape id="Activity_1fok3wu_di" bpmnElement="Activity_1fok3wu">
+      <dc:Bounds x="630" y="190" width="100" height="80" />
+    </bpmndi:BPMNShape>
+  </bpmndi:BPMNPlane>
+</bpmndi:BPMNDiagram>
+```
