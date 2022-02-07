@@ -65,7 +65,8 @@ module.exports = {
                         ['/Thought/YearReview/2018','2018年'],
                         ['/Thought/YearReview/2019','2019年'],
                         ['/Thought/YearReview/2020','2020年'],
-                        ['/Thought/YearReview/2021','2021年']
+                        ['/Thought/YearReview/2021', '2021年'],
+                        ['/Thought/YearReview/2022', '2022年'],
                     ]
                 },
             ],
