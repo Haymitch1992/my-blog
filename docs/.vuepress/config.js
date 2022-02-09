@@ -116,7 +116,7 @@ module.exports = {
                         // 不以 '/' 结尾的就是指向.md文件
                         ['/Examination/interviewExperience/00-准备','准备'],
                         ['/Examination/interviewExperience/01-页面布局','页面布局'],
-
+                        ['/Examination/interviewExperience/前端技术与薪资关系','前端技术与薪资关系'],
                     ]
                 },
                 {
