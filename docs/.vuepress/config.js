@@ -182,6 +182,7 @@ module.exports = {
                     title: 'Javascript',
                     children: [
                         ['/Materials/Javascript/Array', '数组的常见操作'],
+                        ['/Materials/Javascript/Async', 'async的理解'],
                     ]
                 },{
                     title:'Vue项目实战',
