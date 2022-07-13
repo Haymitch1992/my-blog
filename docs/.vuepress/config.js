@@ -193,7 +193,8 @@ module.exports = {
                         ['/Materials/Vue/vueModel','vue-model的原理'],
                         ['/Materials/Vue/vueAwesomeSwiper','项目中使用vue-awesome-swiper'],
                         ['/Materials/Vue/vue3', 'vue3新特性'],
-                        ['/Materials/Vue/vueScoped','Vue中的scoped及穿透方法']
+                        ['/Materials/Vue/vueScoped', 'Vue中的scoped及穿透方法'],
+                        ['/Materials/Vue/pinia','全新的状态管理工具pinia']
                     ]
                 }, {
                     title: 'Vue+TypeScript',
